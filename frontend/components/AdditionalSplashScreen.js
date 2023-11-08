@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react';
-import { StyleSheet, ImageBackground } from 'react-native';
+import React, { useEffect, useState } from "react";
+import { StyleSheet, ImageBackground } from "react-native";
 
 const AdditionalSplashScreen = ({ navigation }) => {
   const images = [
-    require('./assets/AccPrice.png'), // Replace with your image paths
-    require('./assets/AccLoc.png'),
-    require('./assets/SafetyAlerts.png'),
+    require("../assets/AccPrice.png"), // Replace with your image paths
+    require("../assets/AccLoc.png"),
+    require("../assets/SafetyAlerts.png"),
   ];
 
   const [screenNumber, setScreenNumber] = useState(0);
@@ -16,7 +16,7 @@ const AdditionalSplashScreen = ({ navigation }) => {
         setScreenNumber(screenNumber + 1);
       } else {
         clearInterval(timer);
-        navigation.replace('Home'); // Replace with your home screen name
+        navigation.replace("Home"); // Replace with your home screen name
       }
     }, 2000); // 2 seconds delay
 
@@ -34,7 +34,7 @@ const AdditionalSplashScreen = ({ navigation }) => {
 const styles = StyleSheet.create({
   background: {
     flex: 1,
-    resizeMode: 'cover', // Cover the entire container
+    resizeMode: "cover", // Cover the entire container
   },
 });
 
