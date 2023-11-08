@@ -2,10 +2,10 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import SplashScreen from './SplashScreen';
-import AdditionalSplashScreen from './AdditionalSplashScreen';
-import HomeScreen from './HomeScreen';
-import MapNavigation from './MapNavigation'; // Import the MapNavigation component
+import SplashScreen from './components/SplashScreen';
+import AdditionalSplashScreen from './components/AdditionalSplashScreen';
+import HomeScreen from './pages/HomeScreen';
+import MapNavigation from './components/MapNavigation'; // Import the MapNavigation component
 
 
 const Stack = createStackNavigator();
